@@ -17,22 +17,17 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="bg-slate-400">
-  <div class="bg-white rounded-xl w-80 pt-4 pb-10 pl-4 pr-4 mx-auto mt-10 flex flex-col items-center gap-y-4">
-    <div class="container rounded-xl">
-      <img class="rounded-xl" src="images/image-qr-code.png" alt="">
-    </div>
-    <h2 class="font-bold w-4/5 text-center text-lg myfont-1" >Improve your front-end skills by building projects</h2>
-    <p class="text-center text-sm text-gray-500 w-60">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level </p>
-  </div>
-
-
-  
-
-  
-  <div class="attribution">
+<body class="h-screen myBackground flex flex-col  justify-center items-center">
+  <main class="bg-white rounded-xl w-80 pt-4 pb-10 pl-4 pr-4 mt-10 flex flex-col items-center gap-y-4 " aria-roledescription="card-container">
+    <figure class="container rounded-xl" role="group" aria-roledescription="Image container">
+      <img class="rounded-xl" src="images/image-qr-code.png" alt="QR Image" aria-label="QR Image">
+    </figure>
+    <h1 class="font-bold w-4/5 text-center text-lg myfont-1" role="heading" >Improve your front-end skills by building projects</h2>
+    <p class="text-center text-sm text-gray-500 w-60" role="description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level </p>
+  </main>  
+  <footer class="attribution mt-10">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Mahdi Balali</a>.
-  </div>
+  </footer>
 </body>
 </html>
